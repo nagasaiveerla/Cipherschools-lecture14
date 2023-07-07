@@ -1,0 +1,79 @@
+// introduction to arrays in java
+//data structure is the way to store organize data
+
+//creating array like :
+int arr[]=new int [size];
+//array is an indexed collection of finite number of homogenous data elements.(similar elements)
+arr[1]//here we can access the element in index 1.
+//array is an object
+public class BalamSai{
+    void print(int arr[]){
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.println(arr[i]+" ");
+        }
+        System.out.println();
+    }
+    public static void main(Stringa args[]){
+        int arr[]= new int [4];//array creation
+        int size=4;
+        //int arr[],int[] arr,int arr[]->all are same
+        //int ar[]->array declaration expression.
+        //arr-new int[size];->creation of object
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+        System.out.println(arr[3]);
+        print(arr);
+        for(int =0;i<size;i++)
+        {
+            arr[i]=i+1;
+
+        }
+        print(arr);
+
+        //2.array intilalizers list
+        int arr[2]={1,3,4,5,5};
+        print(arr2);
+        //if we want to increase the size of array?
+        int copyArray[]=new int [2*size];//create an array of double size
+       
+        for(int i=0;i<size;i++)//copy all elements from old ot new array
+       {
+        copyArray[i]=arr[i];
+       }
+       copyArray[5]=6;
+       copyArray[6]=7;
+       print(copyArray);
+    
+    
+    
+    }
+}
+//again new class
+public class PassingArray{
+    static void addOne(int x)
+    {
+        x=x+1;
+    }
+    static void addOne(int arr[])
+    {
+        for(int i=0;i<arr.length;i++)
+        {
+            arr[i]++;
+        }
+    }
+    public static void main(String args[]){
+        int x=10;
+        addOne(x);
+        System.out.println(x);
+        int arr[]={1,2,3,4,5};
+        addOne(arr);
+        for(int i=0;i<arr.length;i++)
+    {
+        System.out.println(arr[i]+" ");
+    }
+    System.out.println();
+    }
+}
+
